@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem Vindo ;)</title>
+</head>
+<body>
+        <h1>Olá mundo!</h1>
+        <h3>Notas desta versão:</h3>
+        <ul th:each="nota : ${notas} ">
+            <li th:text="${nota}"></li>
+        </ul>
+
+        <div>
+            <h4>Versão do sistema:</h4>
+            <span th:text="${versao}"></span>
+        </div>
+</body>
+</html>
